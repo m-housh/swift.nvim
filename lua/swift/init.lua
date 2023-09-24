@@ -25,6 +25,8 @@ end
 swift.setup = function(opts)
   opts = opts or {}
 
+  print("Swift Nvim:\n" .. vim.inspect(opts))
+
   local setup_formatting = opts["setup_formatting"]
 
   if (setup_formatting ~= nil) then
