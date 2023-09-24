@@ -1,2 +1,3 @@
 # swift.nvim
-A lua plugin for swift development in neovim
+
+A lua plugin for swift development in neovim.
