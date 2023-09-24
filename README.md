@@ -16,6 +16,9 @@ formatting files when the buffer is written in a `*.swift` file.
 ```lua
 return {
     'm-housh/swift.nvim',
+    dependencies = {
+        'akinsho/toggleterm.nvim'
+    },
     config = function()
         require('swift').setup()
         local actions = require('swift.actions')
