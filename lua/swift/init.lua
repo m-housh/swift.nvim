@@ -24,7 +24,7 @@ end
 
 -- Setup the plugin.
 swift.setup = function(opts)
-  opts = opts or {}
+  opts = opts or { setup_formatting = true }
 
   print("Swift Nvim:\n" .. vim.inspect(opts))
 
@@ -32,12 +32,9 @@ swift.setup = function(opts)
 
   print(vim.inspect(setup_formatting))
 
-  if (setup_formatting ~= nil) then
-    set_formatting()
-  elseif (setup_formatting == true) then
+  if setup_formatting then
     set_formatting()
   end
-
 
   -- Exposes a command that can be used to build a
   -- swift package manager project.
