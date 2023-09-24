@@ -6,6 +6,7 @@ local autocmd = vim.api.nvim_create_autocmd
 local usercmd = vim.api.nvim_create_user_command
 
 local function set_formatting()
+  print("Setting formatting command")
   -- Creates an auto command group to register our
   -- auto commands in.
   local group = vim.api.nvim_create_augroup(augroupname, { clear = true })
@@ -28,6 +29,8 @@ swift.setup = function(opts)
   print("Swift Nvim:\n" .. vim.inspect(opts))
 
   local setup_formatting = opts["setup_formatting"]
+
+  print(vim.inspect(setup_formatting))
 
   if (setup_formatting ~= nil) then
     set_formatting()
