@@ -28,9 +28,9 @@ swift.setup = function(opts)
   local setup_formatting = opts["setup_formatting"]
 
   if (setup_formatting ~= nil) then
-    setup_formatting()
+    set_formatting()
   elseif (setup_formatting == true) then
-    setup_formatting()
+    set_formatting()
   end
 
 
