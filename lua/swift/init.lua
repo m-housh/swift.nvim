@@ -9,9 +9,9 @@ local usercmd = vim.api.nvim_create_user_command
 swift.setup = function(opts)
   opts = opts or {}
 
-  local setup_formatting = opts["setup_formatting"] or true
+  local setup_formatting = opts["setup_formatting"]
 
-  if setup_formatting then
+  if setup_formatting or (setup_formatting ~= nil) then
     -- Creates an auto command group to register our
     -- auto commands in.
     local group = vim.api.nvim_create_augroup(augroupname, { clear = true })
