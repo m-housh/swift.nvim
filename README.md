@@ -45,3 +45,9 @@ test actions manually.
 - **SwiftBuild**
 - **SwiftTest**
 
+If you would like to setup the automatic formatting option when they are not
+setup in the configuration you can use the following command.
+
+```lua
+:lua require('swift.actions').setup_formatting()
+```
