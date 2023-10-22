@@ -12,8 +12,8 @@ swift.setup = function(opts)
     actions.setup_formatting()
   end
 
-  vim.o.shiftwidth = opts["shiftwidth"] or 2
-  vim.o.tabstop = opts["tabstop"] or 2
+  vim.opt.shiftwidth = opts["shiftwidth"] or 2
+  vim.opt.tabstop = opts["tabstop"] or 2
 
   -- Exposes a command that can be used to build a
   -- swift package manager project.
