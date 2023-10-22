@@ -1,0 +1,11 @@
+{
+    "workspace.library": [
+        "/Users/michael/.local/m-housh/lazy/neodev.nvim/types/stable",
+        "/opt/homebrew/Cellar/neovim/0.9.4/share/nvim/runtime/lua",
+        "/Users/michael/.local/m-housh/lazy/neodev.nvim/types/stable",
+        "/opt/homebrew/Cellar/neovim/0.9.4/share/nvim/runtime/lua",
+        "/Users/michael/projects/swift.nvim/lua",
+        "/Users/michael/projects/swift.nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}
